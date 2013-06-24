@@ -3,6 +3,13 @@ RMASBench: Multi-Agent Coordination Benchmark
 
 This is the main repository of the RMASBench benchmarking tool. There's actually no code in this repository, but it contains git submodules of all necessary software to run the platform and all available algorithms.
 
+Requirements
+------------
+
+All software in the RSLBench platform is written in *java 1.7*. Hence, to compile and run it you need to have *java 1.7* installed and set as your default java platform. You can check your java version by running `java -version` in a terminal.
+
+The software is known to work in both *Mac OS X 10.7* with the *Oracle JDK*, and *Ubuntu GNU/linux* with *OpenJDK*. Unfortunately, no version of windows is supported at this time.
+
 Installation
 ------------
 
@@ -48,4 +55,4 @@ You can now launch an example scenario using any of the included algorithms. Whe
 
 **Warning:** The first time you run a scenario of a map (default is "paris"), the simulator will pre-compute a number of things about the map. This process takes around 5 minutes, during which the program will seem to freeze. If you want to see the process, open a new terminal, move to the *boot* folder and execute::
 
-	tail -f logs/*/fire-out.log
+	tail -f logs/*/fire.log
