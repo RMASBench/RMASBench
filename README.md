@@ -56,3 +56,15 @@ You can now launch an example scenario using any of the included algorithms. Whe
 **Warning:** The first time you run a scenario of a map (default is "paris"), the simulator will pre-compute a number of things about the map. This process takes around 5 minutes, during which the program will seem to freeze. If you want to see the process, open a new terminal, move to the *RSLB2/boot* folder and execute:
 
 	tail -f logs/*/fire.log
+
+Developing your coordination algorithm in RMASBench
+---------------------------------------------
+
+You can develop your coordination algorithm in RMASBench by using the coordination API.
+This [pdf](RSLB2/docs/rmas_benchmark.pdf) document provides info on how to do this.
+
+Resources
+--------
+
+* [AAMAS 2013 Video](https://www.youtube.com/watch?v=39y6tkhv5O4)
+* [AAMAS 2013 Short Paper](http://www.ifaamas.org/Proceedings/aamas2013/docs/p1195.pdf)
