@@ -53,6 +53,6 @@ You can now launch an example scenario using any of the included algorithms. Whe
 
 	./start.sh -v -a MaxSum
 
-**Warning:** The first time you run a scenario of a map (default is "paris"), the simulator will pre-compute a number of things about the map. This process takes around 5 minutes, during which the program will seem to freeze. If you want to see the process, open a new terminal, move to the *boot* folder and execute:
+**Warning:** The first time you run a scenario of a map (default is "paris"), the simulator will pre-compute a number of things about the map. This process takes around 5 minutes, during which the program will seem to freeze. If you want to see the process, open a new terminal, move to the *RSLB2/boot* folder and execute:
 
 	tail -f logs/*/fire.log
