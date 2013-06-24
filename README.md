@@ -28,7 +28,7 @@ All this software must be compiled being able to run the *RSLB2* tool. This can 
 
 	cd BinaryMaxSum; ant jar; cd ..
 	cd jmaxsum; ant jar; cd ..
-	cd roborescue; ant oldsims jar; cd ..
+	cd roborescue; ant oldsims jars; cd ..
 	cd RSLB2; ant jar; cd ..
 
 If everything compiles well (you can ignore warnings), you are now ready to start testing. 
