@@ -63,6 +63,8 @@ Developing your coordination algorithm in RMASBench
 You can develop your coordination algorithm in RMASBench by using the coordination API.
 This [pdf](RSLB2/docs/rmas_benchmark.pdf) document provides info on how to do this.
 
+
+
 Resources
 --------
 
