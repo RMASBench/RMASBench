@@ -10,3 +10,6 @@
 [submodule "RSLB2"]
 	path = RSLB2
 	url = https://github.com/RMASBench/RSLB2.git
+[submodule "BlockadeLoader"]
+	path = BlockadeLoader
+	url = https://github.com/RMASBench/BlockadeLoader.git
