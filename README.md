@@ -6,7 +6,7 @@ This is the main repository of the RMASBench benchmarking tool. There's actually
 Requirements
 ------------
 
-All software in the RSLBench platform is written in *java 1.7*. Hence, to compile and run it you need to have *java 1.7* installed and set as your default java platform. You can check your java version by running `java -version` in a terminal.
+All software in the RSLBench platform is written in *java 1.7*. Hence, to compile and run it you need to have *java 1.7* installed and set as your default java platform. You can check your java version by running `java -version` in a terminal. You also need both maven and ant installed in your system to compile the different libraries.
 
 The software is known to work in both *Mac OS X 10.7* with the *Oracle JDK*, and *Ubuntu GNU/linux* with *OpenJDK*. Unfortunately, no version of windows is supported at this time.
 
@@ -33,7 +33,7 @@ You will get an RMASBench folder containing 4 sub-folders (projects):
 
 All this software must be compiled before being able to run the *RSLB2* tool. This can be easily achieved by using ant with the proper target for each subfolder:
 
-	cd BinaryMaxSum; ant jar; cd ..
+	cd BinaryMaxSum; mvn package; cd ..
 	cd jmaxsum; ant jar; cd ..
 	cd roborescue; ant oldsims jars; cd ..
 	cd RSLB2; ant jar; cd ..
