@@ -13,3 +13,6 @@
 [submodule "BlockadeLoader"]
 	path = BlockadeLoader
 	url = https://github.com/RMASBench/BlockadeLoader.git
+[submodule "MaxSum"]
+	path = MaxSum
+	url = https://github.com/RMASBench/MaxSum.git
