@@ -33,7 +33,8 @@ You will get an RMASBench folder containing 4 sub-folders (projects):
 
 All this software must be compiled before being able to run the *RSLB2* tool. This can be easily achieved by using ant with the proper target for each subfolder:
 
-	cd BinaryMaxSum; mvn package; cd ..
+	cd RMASBench
+	cd BinaryMaxSum; mvn -DskipTests package; cd ..
 	cd MaxSum; ant jar; cd ..
 	cd roborescue; ant oldsims jars; cd ..
 	cd BlockadeLoader; ant jar; cd ..
