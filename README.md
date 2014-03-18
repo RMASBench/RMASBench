@@ -40,7 +40,8 @@ All this software must be compiled before being able to run the *RSLB2* tool. Th
 	cd BlockadeLoader; ant jar; cd ..
 	cd RSLB2; ant jar; cd ..
 
-If everything compiles well (you can ignore warnings), you are now ready to start testing. 
+If everything compiles well (you can ignore warnings, but not errors!), you are now ready to
+start testing. 
 
 
 Usage
@@ -51,13 +52,22 @@ Normally, you will run experiments from within the *RSLB2/boot* folder. Get into
 	cd RSLB2/boot
 	./start.sh -h
 
-You can now launch an example scenario using any of the included algorithms. When testing, include the "*-v*" flag to enable the simulation viewer. For example, you can run the example scenario with agents coordinated by the MaxSum algorithm:
+You can now launch an example scenario using any of the included algorithms. When testing, include the `-v` flag to enable the simulation viewer. For example, you can run the example scenario with the included example experiment configuration by running:
 
-	./start.sh -v -a MaxSum
+	./start.sh -v -c example -m paris -s example-nopolice
 
-**Warning:** The first time you run a scenario of a map (default is "paris"), the simulator will pre-compute a number of things about the map. This process takes a lot of time, during which the program may seem to freeze. If you want to see the process, open a new terminal, move to the *RSLB2/boot* folder and execute:
+This will start a simulation of the example paris scenario without blockades nor police forces. Alternatively, you can run with the police forces and blockades enabled by running the following (notice the `-b` switch which enables blockades, as well as the change of the scenario file to use):
+
+	./start.sh -v -b -c example -m paris -s example-police
+
+**Warning:** The first time you run a scenario of a map (default is "paris"), the simulator will pre-compute a number of things about the map. This process takes a lot of time, during which the program may seem to freeze. You can view the initial precomputation process by 
+opening a new terminal, moving to the *RSLB2/boot* folder and executing:
 
 	tail -f logs/*/fire.log
+
+Once this process finishes, there will be a second precomputation step, but the progress for
+that one will show directly on the terminal where you launched the simulation from.
+
 
 Developing your coordination algorithm in RMASBench
 ---------------------------------------------
