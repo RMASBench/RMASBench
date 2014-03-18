@@ -60,22 +60,14 @@ This will start a simulation of the example paris scenario without blockades nor
 
 	./start.sh -v -b -c example -m paris -s example-police
 
-**Warning:** The first time you run a scenario of a map (default is "paris"), the simulator will pre-compute a number of things about the map. This process takes a lot of time, during which the program may seem to freeze. You can view the initial precomputation process by 
-opening a new terminal, moving to the *RSLB2/boot* folder and executing:
-
-	tail -f logs/*/fire.log
-
-Once this process finishes, there will be a second precomputation step, but the progress for
-that one will show directly on the terminal where you launched the simulation from.
+**Warning:** The first time you run a scenario of a map (default is "paris"), the simulator will pre-compute a number of things about the map. This process takes a lot of time (up to one our depending on your machine), during which you will see the progress on the terminal where you launched the simulation from.
 
 
 Developing your coordination algorithm in RMASBench
 ---------------------------------------------
 
 You can develop your coordination algorithm in RMASBench by using the coordination API.
-This [pdf](https://github.com/RMASBench/RSLB2/raw/master/docs/rmas_benchmark.pdf) document provides info on how to do this.
-
-
+This [pdf](https://github.com/RMASBench/RSLB2/raw/master/docs/rmas_benchmark.pdf) document provides some (outdated) info on how to do this. Hence, it is probably better if you look at how the current algorightms are implemented (greedy and random are especially easy to grasp).
 
 Resources
 --------
