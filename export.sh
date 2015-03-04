@@ -11,7 +11,7 @@ DST=$(echo $DST/ | sed 's#//#/#g')
 set -e
 function recompile {
     cd BinaryMaxSum
-    ant clean jar
+    mvn -DskipTests package
     cd -
 
     cd jMaxSum
